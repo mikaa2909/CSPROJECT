@@ -96,22 +96,22 @@ public class Game1 : Game
 
             // Change direction of pacman when pressing keyboard keys
             KeyboardState kState = Keyboard.GetState();
-            if (kState.IsKeyDown(Keys.Up))
+            if (kState.IsKeyDown(Keys.W))
             {
                 currentDirection = Dir.Up;
                 // currentPacMan = new Rectangle(1419, 99, 39, 39);
             }
-            else if (kState.IsKeyDown(Keys.Down))
+            else if (kState.IsKeyDown(Keys.S))
             {
                 currentDirection = Dir.Down;
                 // currentPacMan = new Rectangle(1419, 147, 39, 39);
             }
-            else if (kState.IsKeyDown(Keys.Right))
+            else if (kState.IsKeyDown(Keys.D))
             {
                 currentDirection = Dir.Right;
                 // currentPacMan = new Rectangle(1419, 3, 39, 39);
             }
-            else if (kState.IsKeyDown(Keys.Left))
+            else if (kState.IsKeyDown(Keys.A))
             {
                 currentDirection = Dir.Left;
                 // currentPacMan = new Rectangle(1419, 51, 39, 39);
